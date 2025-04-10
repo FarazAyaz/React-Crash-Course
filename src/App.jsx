@@ -3,7 +3,16 @@ import React from 'react'
 const App = () => {
   return (
     <div>
-      <h1>Hello FARAZ</h1>
+      <Mycomponemnt />
+    </div>
+  )
+}
+
+const Mycomponemnt = () => {
+  return (
+    <div>
+      <h1>MY NAME</h1>
+      <h2>FARAZ AYAZ KHAN</h2>
     </div>
   )
 }
