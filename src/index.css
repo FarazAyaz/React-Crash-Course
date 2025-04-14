@@ -3,7 +3,7 @@ ul {
   grid-template-columns: repeat(3, 1fr); /* 3 per row */
   gap: 16px; /* smaller gap between cards */
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
   justify-items: center;
 }
 
@@ -74,6 +74,3 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-
-
-

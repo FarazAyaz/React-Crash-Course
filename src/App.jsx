@@ -5,6 +5,7 @@ const App = () => {
   <AnimeSeries/>
   return (
     <div>
+      <h1>Netflix Top Best Series</h1>
       <AnimeSeries/>
       {/* <Profile/> */}
 
