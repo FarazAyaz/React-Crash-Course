@@ -7,12 +7,17 @@ const SeriesCard = ({ Data }) => {
     <li>
         <img src={img_url} alt={name} width="40%" height="40%" />
         <h1>Name: {name}</h1>
-        <h2>Rating: {rating}</h2>
+        <h2>Rating: <span className={`rating ${rating >= 8.5 ? "Super_hit" : "Average"}`}>
+          {rating}
+          </span>
+          </h2>
         <h3>Genre:{genre}</h3>
         <p>Cast: {cast}</p>
         <p>Summary: {description}</p>
         <a href= {watch_url} target="_blank" rel="noreferrer">
-          <button>Watch Now</button>
+          <button className= {`button ${rating >= 8.5 ? "Super_hit" : "Average"}`}>
+            Watch Now
+          </button>
         </a>
     </li>
   );
