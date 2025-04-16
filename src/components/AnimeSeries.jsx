@@ -4,7 +4,7 @@ const AnimeSeries = () => {
   return (
     <ul>
       {SeriesData.map((Series) => (
-       <SeriesCard key= {.id} Data={Series}/>
+        <SeriesCard key={Series.id} Data={Series} />
       ))}
     </ul>
   );
