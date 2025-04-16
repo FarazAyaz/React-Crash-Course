@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SeriesCard = ({ Data }) => {
-  console.log(Data);
-  const {img_url, name, rating, genre, cast, description, watch_url } = Data;
+const SeriesCard = ({ id }) => {
+  console.log(id);
+  const {img_url, name, rating, genre, cast, description, watch_url } = id;
   return (
     <li>
         <img src={img_url} alt={name} width="40%" height="40%" />
