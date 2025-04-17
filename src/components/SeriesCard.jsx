@@ -13,7 +13,7 @@ const SeriesCard = ({ Data }) => {
           </h2>
         <h3>Genre:{genre}</h3>
         <p>Cast: {cast}</p>
-        <p>Summary: {description}</p>
+        <p className='font-bold'>Summary: {description}</p>
         <a href= {watch_url} target="_blank" rel="noreferrer">
           <button className= {`button ${rating >= 8.5 ? "Super_hit" : "Average"}`}>
             Watch Now
