@@ -4,7 +4,7 @@ const EventProps = () => {
     const HandleWelcomeUser = (user) =>{
         alert(`My Name is ${user}`)
     };
-const handleHover = () =>{
+const handleHover = () => {
     alert("Thanks Faraz For Hovering Me")
 };
   return (
@@ -15,8 +15,8 @@ const handleHover = () =>{
     </>
   )
 }
-const WelcomeUser = (props) => {
-    const {onClick, onMouseEnter} = props;
+const WelcomeUser = ({onClick,onMouseEnter}) => {
+    // const {onClick, onMouseEnter} = data;
     const HandleGreeting = ()=> {
         console.log("HEllo Faraz");
         }
@@ -24,8 +24,7 @@ const WelcomeUser = (props) => {
         <>
         <button onClick={onClick}>Click Me</button>
         <button onMouseEnter={onMouseEnter}>Hover Me</button>
-        <button onClick={HandleGreeting}>Greeting</button>
-        
+        <button onClick={HandleGreeting}>Greeting</button>    
         </>
     )
 }
