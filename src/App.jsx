@@ -5,6 +5,7 @@ import EventHandling from "./components/EventHandling";
 import EventProps from "./components/EventProps";
 import NewFile from "./components/NewFile";
 import Usestate from "./components/Usestate";
+import Practicehook from "./components/Practicehook";
 const App = () => {
   // <AnimeSeries/>
   // <EventHandling/>
@@ -16,9 +17,11 @@ const App = () => {
       {/* <Profile/> */}
       {/* <EventHandling/> */}
       {/* <EventProps/> */}
-      <NewFile />
-     <Usestate/>
-    </div>
+      {/* <NewFile /> */}
+     {/* <Usestate/> */}
+     <Practicehook/>
+    
+ </div>
   );
 };
 
