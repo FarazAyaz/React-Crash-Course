@@ -8,7 +8,8 @@ const Practicehook = () => {
     { name: "Siffat Ayaz", age: 25 },
     { name: "Ayaz", age: 28 }
   ]);
-
+   const userCount = users.length;
+   const avg = users.reduce((acc, user)=> acc + user.age, 0) / userCount;
   return (
     <>
       <h1>Users List</h1>
@@ -20,6 +21,8 @@ const Practicehook = () => {
           </li>
         ))}
       </ul>
+      <p>Users {userCount}</p>
+      <p>Average Age {avg}</p>
     </>
   );
 };
