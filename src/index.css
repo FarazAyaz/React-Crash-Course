@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+/*
 ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -88,4 +88,4 @@ button:hover {
  margin-left: 1.2rem; 
  border-radius: 50px;
 
-}
+} */

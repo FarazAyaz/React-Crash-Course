@@ -6,9 +6,15 @@ import EventProps from "./components/EventProps";
 import NewFile from "./components/NewFile";
 import Usestate from "./components/Usestate";
 import Practicehook from "./components/Practicehook";
+import BASICPROP from "./components/BASICPROP";
+import ToggleSwitch from "./projects/TogglesSwitch/ToggleSwitch";
 const App = () => {
   // <AnimeSeries/>
   // <EventHandling/>
+  const handleClick = () => {
+    alert("Button Clicked");
+  };
+
   <EventProps />;
   return (
     <div>
@@ -18,10 +24,11 @@ const App = () => {
       {/* <EventHandling/> */}
       {/* <EventProps/> */}
       {/* <NewFile /> */}
-     {/* <Usestate/> */}
-     <Practicehook/>
-    
- </div>
+      {/* <Usestate/> */}
+      {/* <Practicehook/> */}
+      {/* <BASICPROP Text={"Click Me"} onClick={handleClick} /> */}
+      <ToggleSwitch/>
+    </div>
   );
 };
 
