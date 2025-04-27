@@ -8,6 +8,7 @@ import Usestate from "./components/Usestate";
 import Practicehook from "./components/Practicehook";
 import BASICPROP from "./components/BASICPROP";
 import ToggleSwitch from "./projects/TogglesSwitch/ToggleSwitch";
+import Todo from "./projects/Todo/Todo";
 const App = () => {
   // <AnimeSeries/>
   // <EventHandling/>
@@ -27,7 +28,8 @@ const App = () => {
       {/* <Usestate/> */}
       {/* <Practicehook/> */}
       {/* <BASICPROP Text={"Click Me"} onClick={handleClick} /> */}
-      <ToggleSwitch/>
+      {/* <ToggleSwitch/> */}
+      <Todo />
     </div>
   );
 };

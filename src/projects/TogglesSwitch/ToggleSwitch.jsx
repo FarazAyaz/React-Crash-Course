@@ -16,7 +16,6 @@ const ToggleSwitch = () => {
         </span>
         </div>
     </div>
-
     </>
   )
 }
