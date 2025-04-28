@@ -32,7 +32,16 @@ const Todo = () => {
   },1000);
   return () => clearInterval(interval);
  })
-
+ // Delete Task
+ const handleDeleteTodo = (value) => {
+  console.log(value);
+  const updatedTask = task.filter((curTask) => curTask !== value);
+  setTask(updatedTask);
+ }
+  // Clear All Task
+  const handleClearAll = () => {
+    setTask([])
+  }
 
   return (
     <section className="todo-container">
@@ -65,13 +74,18 @@ const Todo = () => {
                 <button className="check-btn">
                   <MdCheck />
                 </button>
-                <button className="delete-btn">
+                <button className="delete-btn" onClick={()=>handleDeleteTodo(curTask)}>
                   <MdDeleteForever />
                 </button>
               </li>
             );
           })}
         </ul>
+      </section>
+      <section>
+        <button className="clear-btn" onClick={handleClearAll}>
+            Clear All
+        </button>
       </section>
     </section>
   );
