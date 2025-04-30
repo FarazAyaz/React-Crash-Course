@@ -8,17 +8,11 @@ import Usestate from "./components/Usestate";
 import Practicehook from "./components/Practicehook";
 import BASICPROP from "./components/BASICPROP";
 import ToggleSwitch from "./projects/TogglesSwitch/ToggleSwitch";
-import Todo from "./projects/Todo/Todo";
-const App = () => {
-  // <AnimeSeries/>
-  // <EventHandling/>
-  const handleClick = () => {
-    alert("Button Clicked");
-  };
+import TODO from "./projects/TODO-MASTERED/TODO";
 
-  <EventProps />;
+const App = () => {
   return (
-    <div>
+    <div >
       {/* <h1>Netflix Top Best Series</h1> */}
       {/* <AnimeSeries/> */}
       {/* <Profile/> */}
@@ -29,7 +23,8 @@ const App = () => {
       {/* <Practicehook/> */}
       {/* <BASICPROP Text={"Click Me"} onClick={handleClick} /> */}
       {/* <ToggleSwitch/> */}
-      <Todo />
+      {/* <Todo /> */}
+      <TODO />
     </div>
   );
 };

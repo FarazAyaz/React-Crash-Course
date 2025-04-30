@@ -5,7 +5,7 @@
   justify-content: center;
 } */
 
-.todo-container {
+/* .todo-container {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
     letter-spacing: 0.1rem;
     border: none;
     outline: none;
-    /* border-radius: 15; */
+     border-radius: 15; 
     border-top-left-radius: 17px;
     border-bottom-left-radius: 17px;
     max-width: 500px;
@@ -119,14 +119,14 @@
     min-width: 25%;
   
     /* To remove the bullets of unordered list */
-    list-style: none;
+    /* list-style: none;
   }
   
   .todo-item {
     margin: 2.4rem;
-    /*word-wrap: break-word;
-      */ /*flex-wrap: wrap;
-      */
+    word-wrap: break-word;
+    flex-wrap: wrap;
+      
     font-size: 20px;
     color: #1c2833;
     border-radius: 30px;
@@ -139,8 +139,7 @@
     grid-template-columns: 1fr 0.3fr 0.3fr;
     justify-content: start;
     gap: 1.6rem;
-    /*align-items: center;
-      */ /*wrapsthelinks*/
+   
     overflow-wrap: anywhere;
   }
   
@@ -193,4 +192,4 @@
   
   .clear-btn:hover {
     background-color: #8d1407;
-  }
+  } */ */
