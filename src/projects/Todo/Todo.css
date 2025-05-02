@@ -5,7 +5,7 @@
   justify-content: center;
 } */
 
-/* .todo-container {
+ /*.todo-container {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -117,9 +117,7 @@
   
   .todo-list {
     min-width: 25%;
-  
-    /* To remove the bullets of unordered list */
-    /* list-style: none;
+    list-style: none;
   }
   
   .todo-item {
@@ -191,5 +189,5 @@
   }
   
   .clear-btn:hover {
-    background-color: #8d1407;
-  } */ */
+    background-color: #8d1407; 
+  } */

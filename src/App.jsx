@@ -9,6 +9,7 @@ import Practicehook from "./components/Practicehook";
 import BASICPROP from "./components/BASICPROP";
 import ToggleSwitch from "./projects/TogglesSwitch/ToggleSwitch";
 import TODO from "./projects/TODO-MASTERED/TODO";
+import Todo from "./projects/Todo/Todo";
 
 const App = () => {
   return (
