@@ -24,7 +24,7 @@ const TODO = () => {
   };
   const handleCheckTodo = (id) => {
     setTodos((pre) => {
-      const todos = pre.map((todo) => {
+      return pre.map((todo) => {
         if (todo.id === id) {
           return {
             ...todo,
@@ -33,7 +33,7 @@ const TODO = () => {
         } else return todo;
       });
 
-      return todos;
+      
     });
   };
 
