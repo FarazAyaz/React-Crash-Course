@@ -15,7 +15,7 @@ const SeriesCard = ({ Data }) => {
         <p>Cast: {cast}</p>
         <p className='font-bold'>Summary: {description}</p>
         <a href= {watch_url} target="_blank" rel="noreferrer">
-          <button className= {`button ${rating >= 8.5 ? "Super_hit" : "Average"}`}>
+          <button className= {`button ${rating >= 8 ? "Super_hit" : "Average"}`}>
             Watch Now
           </button>
         </a>
