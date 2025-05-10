@@ -10,7 +10,7 @@ import BASICPROP from "./components/BASICPROP";
 import ToggleSwitch from "./projects/TogglesSwitch/ToggleSwitch";
 import TODO from "./projects/TODO-MASTERED/TODO";
 import Todo from "./projects/Todo/Todo";
-
+import MyTodo from "./projects/MyTodo/MyTodo";
 const App = () => {
   return (
     <div >
@@ -25,7 +25,8 @@ const App = () => {
       {/* <BASICPROP Text={"Click Me"} onClick={handleClick} /> */}
       {/* <ToggleSwitch/> */}
       {/* <Todo /> */}
-      <TODO />
+      {/* <TODO /> */}
+      <MyTodo />
     </div>
   );
 };
