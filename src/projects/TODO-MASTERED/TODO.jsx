@@ -63,7 +63,7 @@ const TODO = () => {
         </div>
       ) : (
         <>
-          <ul className="space-y-4  w-full max-sm:max-w-[80%]  max-w-[60%] mt-8  ">
+          <ul className="space-y-4  w-full max-sm:max-w-[80%]  max-w-[60%] mt-8">
             {todos.map((todo) => {
               console.log("This is todo", todo);
               return (
