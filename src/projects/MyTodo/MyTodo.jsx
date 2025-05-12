@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { MdCheck, MdDeleteForever } from 'react-icons/md';
 
 const MyTodo = () => {
   const [inputValue, setInputValue] = useState("");
   const [task, setTask] = useState([]);
+  const [dateTime, setDateTime] = useState("");
 
   const handleInputChange = (value) => {
     setInputValue(value);
@@ -15,6 +16,7 @@ const MyTodo = () => {
       return;
     }
 
+ 
     // Check for duplicate tasks
     if (task.some((t) => t.content === inputValue)) {
       alert("Task already exists");
@@ -32,10 +34,26 @@ const MyTodo = () => {
     setTask((prevTask) => [...prevTask, todo]);
     setInputValue("");
   };
+  // DATE AND TIME
+  useEffect(()=> {
+    const Interval = setInterval(()=> {
+    const date = new Date ();
+  const formattedDate = date.toLocaleDateString();
+  const formattedTime = date.toLocaleTimeString();
+  setDateTime(`${formattedDate} - ${formattedTime}`); 
+  },1000)
+    return () => clearInterval(Interval)
+},[])
+   const handleDeleteTodo = (value) => {
+    const updatedTasks = task.filter((todo)=> todo.content !== value);
+    setTask(updatedTasks)
+  }
 
+ 
   return (
     <div className='flex flex-col justify-center items-center h-screen bg-gray-200 w-screen'>
       <h1 className='font-semibold text-3xl '>All Tasks</h1>
+      <h1 className='mt-5 font-bold text-3xl'>{dateTime}</h1>
       <div className='flex w-[40%] mt-8 gap-8 items-center justify-center'>
         <input 
           type="search" 
@@ -62,9 +80,9 @@ const MyTodo = () => {
             <li key={todo.id} className='flex justify-between  bg-white shadow-md rounded-lg p-4 my-2 '> 
               <span>{todo.content}</span> 
               <div className='flex items-center gap-4'>
-                <button>
+                <button >
                 <span className='text-red-500 hover:text-red-700 transition duration-300 ease-in-out cursor-pointer'>
-                  <MdDeleteForever className='w-[30px] h-[30px]'/> 
+                  <MdDeleteForever className='w-[30px] h-[30px]' onClick={()=> handleDeleteTodo(todo.content)}/> 
                 </span>
               </button> 
               <button>
@@ -77,6 +95,9 @@ const MyTodo = () => {
           ))}
         </ul>
       )}
+      <button onClick={() => setTask([])} className='bg-red-500 text-white px-4 py-2 rounded-lg mt-5 hover:bg-red-600 transition duration-300 ease-in-out cursor-pointer'>
+        Clear All
+      </button>
     </div>
   );
 };
