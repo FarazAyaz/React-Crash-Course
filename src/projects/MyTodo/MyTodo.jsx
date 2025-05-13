@@ -48,6 +48,18 @@ const MyTodo = () => {
     const updatedTasks = task.filter((todo)=> todo.content !== value);
     setTask(updatedTasks)
   }
+  const handleCheckTodo = (value) => {
+    setTask((prev) => {
+      return prev.map((todo)=> {
+        if (todo.content  === value)
+          return {
+           ...todo,
+            state: todo?.state === "pending" ? "completed" : "pending",
+          }
+        else return todo;
+      })
+    })
+  }
 
  
   return (
@@ -77,7 +89,12 @@ const MyTodo = () => {
       ) : (
         <ul className="space-y-4  w-full max-w-[60%] mt-8">
           {task.map((todo) => (
-            <li key={todo.id} className='flex justify-between  bg-white shadow-md rounded-lg p-4 my-2 '> 
+            <li key={todo.id} className={`bg-white ${
+                    todo?.state === "completed"
+                      ? "border-2 border-yellow-600 shadow-yellow-400"
+                      : ""
+                  } p-4 flex items-center justify-between flex-1 rounded-lg shadow-md`}
+                 > 
               <span>{todo.content}</span> 
               <div className='flex items-center gap-4'>
                 <button >
@@ -87,7 +104,7 @@ const MyTodo = () => {
               </button> 
               <button>
                 <span className='text-green-500 hover:text-green-700 transition duration-300 ease-in-out cursor-pointer'>
-                  <MdCheck className='w-[30px] h-[30px]'/> 
+                  <MdCheck className='w-[30px] h-[30px]' onClick={() => handleCheckTodo(todo.content)}/> 
                 </span>
               </button> 
               </div>
