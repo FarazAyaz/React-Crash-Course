@@ -43,14 +43,6 @@ const MyTodo = () => {
   };
 // add todo in Local storage
 localStorage.setItem(todokey, JSON.stringify(task))
-
-
-
-
-
-
-
-
   // DATE AND TIME
   useEffect(()=> {
     const Interval = setInterval(()=> {
