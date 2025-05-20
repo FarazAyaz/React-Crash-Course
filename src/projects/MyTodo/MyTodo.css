@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 40px;
+  width: 70px;
   height: 30px;
   border: none;
   padding: 0px 20px;
@@ -21,7 +21,7 @@
   width: 13px;
   position: absolute;
   right: 0;
-  margin-right: 20px;
+  margin-right: 0px;
   fill: white;
   transition-duration: .3s;
 }
