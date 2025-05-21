@@ -11,6 +11,7 @@ import ToggleSwitch from "./projects/TogglesSwitch/ToggleSwitch";
 import TODO from "./projects/TODO-MASTERED/TODO";
 import Todo from "./projects/Todo/Todo";
 import MyTodo from "./projects/MyTodo/MyTodo";
+import Counter from "./projects/Advance Counter/Counter";
 const App = () => {
   return (
     <div >
@@ -26,7 +27,8 @@ const App = () => {
       {/* <ToggleSwitch/> */}
       {/* <Todo /> */}
       {/* <TODO /> */}
-      <MyTodo />
+      {/* <MyTodo /> */}
+      <Counter />
     </div>
   );
 };
