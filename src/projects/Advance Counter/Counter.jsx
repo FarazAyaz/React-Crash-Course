@@ -5,14 +5,14 @@ const Counter = () => {
     const [step, setStep] = useState(1);
 
     const handleCountInc = () => {
-      if (count == 100) {
+      if (count >= 100) {
         alert("You have reached the maximum limit of 100");
         return;
       }
         setCount(count + step);
     }
     const handleCountDec = () => {
-      if (count == 0) {
+      if (count <= 0) {
         alert("You have reached the minimum limit of 0");
         return;
       }
