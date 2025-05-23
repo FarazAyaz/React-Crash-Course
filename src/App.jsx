@@ -12,6 +12,7 @@ import TODO from "./projects/TODO-MASTERED/TODO";
 import Todo from "./projects/Todo/Todo";
 import MyTodo from "./projects/MyTodo/MyTodo";
 import Counter from "./projects/Advance Counter/Counter";
+import RegistartionForm from "./hooks/RegistartionForm";
 const App = () => {
   return (
     <div >
@@ -28,7 +29,9 @@ const App = () => {
       {/* <Todo /> */}
       {/* <TODO /> */}
       {/* <MyTodo /> */}
-      <Counter />
+      {/* <Counter /> */}
+       <RegistartionForm />
+
     </div>
   );
 };
