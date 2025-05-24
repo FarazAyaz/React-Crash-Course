@@ -23,7 +23,7 @@ const handleSubmitData = (e) => {
               type="text"
               name="email"
               value={userData.email}
-              onChange={(e) => setUserData (e.target.value)}
+              onChange={(e) => setUserData ({...userData, email: e.target.value})}
               className="w-full border text-base py-1 px-2 rounded-md focus:outline-none focus:ring-0 focus:border-gray-600"
               placeholder="Enter First Name"
             />
@@ -34,7 +34,7 @@ const handleSubmitData = (e) => {
               type="password"
               name="password"
               value={userData.password}
-              onChange={(e) => setUserData (e.target.value)}
+              onChange={(e) => setUserData ({...userData, password: e.target.value})}
               className="w-full border text-base py-1 px-2 rounded-md focus:outline-none focus:ring-0 focus:border-gray-600"
               placeholder="Create Password"
             />
