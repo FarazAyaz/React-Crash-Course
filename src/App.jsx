@@ -29,10 +29,10 @@ const App = () => {
       {/* <ToggleSwitch/> */}
       {/* <Todo /> */}
       {/* <TODO /> */}
-      {/* <MyTodo /> */}
+      <MyTodo />
       {/* <Counter /> */}
        {/* <RegistartionForm /> */}
-       <LoginForm />
+       {/* <LoginForm /> */}
 
     </div>
   );
