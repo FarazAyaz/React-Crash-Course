@@ -127,7 +127,7 @@ const MyTodo = () => {
                   : ""
               } p-4 rounded-lg shadow-md`}
             >
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between ">
                 {isUpdating === todo.id ? (
                   <form
                     onSubmit={(e) => {
