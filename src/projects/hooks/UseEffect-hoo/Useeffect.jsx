@@ -17,9 +17,9 @@ const Useeffect = () => {
       <p>
         Count: <span> {count} </span>
       </p>
-      <button onClick={ () => setCount (count + 1)   }>Increment</button>
+      <button onClick={() => setCount (count + 1)}>Increment</button>
       <p>
-        Name: <span> {name} </span>
+        Name: <span>{name}</span>
       </p>
       <input
         type="text"
