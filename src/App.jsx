@@ -14,6 +14,7 @@ import MyTodo from "./projects/MyTodo/MyTodo";
 import Counter from "./projects/Advance Counter/Counter";
 import RegistartionForm from "./hooks/RegistartionForm";
 import LoginForm from "./hooks/LoginForm";
+import Useeffect from "./projects/hooks/UseEffect-hoo/Useeffect";
 const App = () => {
   return (
     <div >
@@ -29,10 +30,11 @@ const App = () => {
       {/* <ToggleSwitch/> */}
       {/* <Todo /> */}
       {/* <TODO /> */}
-      <MyTodo />
+      {/* <MyTodo /> */}
       {/* <Counter /> */}
        {/* <RegistartionForm /> */}
        {/* <LoginForm /> */}
+       <Useeffect />
 
     </div>
   );
