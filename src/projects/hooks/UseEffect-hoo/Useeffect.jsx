@@ -8,7 +8,7 @@ const Useeffect = () => {
    useEffect(()=> {
     document.title = `Count: ${count}`
     console.log(`Count updated: ${count}`)
-   }, [count])
+   },[count])
 
 
   return (
