@@ -13,7 +13,7 @@ const Useeffect = () => {
 
   return (
     <div className="container effect-container">
-      <h1>useEffect Challenge</h1>
+      <h1> useEffect Challenge</h1>
       <p>
         Count: <span> {count} </span>
       </p>
