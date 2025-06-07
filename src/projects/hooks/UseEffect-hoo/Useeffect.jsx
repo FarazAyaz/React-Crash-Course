@@ -15,7 +15,7 @@ const Useeffect = () => {
     <div className="container effect-container">
       <h1>useEffectChallenge</h1>
       <p>
-        Count: <span> {count} </span>
+        Count: <span> { count} </span>
       </p>
       <button onClick={() => setCount (count + 1)}>Increment</button>
       <p>
