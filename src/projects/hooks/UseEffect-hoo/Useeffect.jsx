@@ -5,7 +5,7 @@ const Useeffect = () => {
    const [count, setCount] = useState(0)
    const [name, setName] = useState("")
     
-   useEffect(()=> {
+   useEffect(()=>{
     document.title = `Count: ${count}`
     console.log(`Count updated: ${count}`)
    },[count])
