@@ -9,8 +9,7 @@ const Useeffect = () => {
     document.title = `Count: ${count}`
     console.log(`Count updated: ${count}`)
    },[count])
-
-
+   
   return (
     <div className="container effect-container">
       <h1>useEffectChallenge</h1>
