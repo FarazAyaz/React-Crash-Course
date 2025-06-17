@@ -34,7 +34,7 @@ const App = () => {
       {/* <Counter /> */}
        {/* <RegistartionForm /> */}
        {/* <LoginForm /> */}
-       <Useeffect />
+       {/* <Useeffect /> */}
 
     </div>
   );
