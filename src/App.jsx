@@ -15,6 +15,7 @@ import Counter from "./projects/Advance Counter/Counter";
 import RegistartionForm from "./hooks/RegistartionForm";
 import LoginForm from "./hooks/LoginForm";
 import Useeffect from "./projects/hooks/UseEffect-hoo/Useeffect";
+import FecthingData from "./projects/hooks/UseEffect-hoo/FecthingData";
 const App = () => {
   return (
     <div >
@@ -35,7 +36,7 @@ const App = () => {
        {/* <RegistartionForm /> */}
        {/* <LoginForm /> */}
        {/* <Useeffect /> */}
-
+       <FecthingData />
     </div>
   );
 };
