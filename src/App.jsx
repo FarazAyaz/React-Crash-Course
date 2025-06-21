@@ -16,6 +16,7 @@ import RegistartionForm from "./hooks/RegistartionForm";
 import LoginForm from "./hooks/LoginForm";
 import Useeffect from "./projects/hooks/UseEffect-hoo/Useeffect";
 import FecthingData from "./projects/hooks/UseEffect-hoo/FecthingData";
+import PokemonCard from "./projects/hooks/UseEffect-hoo/PokemonCard";
 const App = () => {
   return (
     <div >
@@ -36,7 +37,8 @@ const App = () => {
        {/* <RegistartionForm /> */}
        {/* <LoginForm /> */}
        {/* <Useeffect /> */}
-       <FecthingData />
+       {/* <FecthingData /> */}
+      <PokemonCard />
     </div>
   );
 };
