@@ -4,6 +4,7 @@ import "./Pokemon.css";
 
 const PokemonCard = () => {
     const [pokemon, setPokemon] = useState([]);
+    const [search, setSearch] = useState("");
   useEffect(() => {
     const API = "https://pokeapi.co/api/v2/pokemon?limit=100";
     const fetchPokemon = async () => {
@@ -27,14 +28,23 @@ const PokemonCard = () => {
     };
     fetchPokemon();
   }, []);
-
+   const filterPokemon = pokemon.filter((curPokemon) => curPokemon.name.toLowerCase().includes(search.toLowerCase()))
   return  <div>
       <header>
         <h1> Lets Catch Pokémon</h1>
       </header>
+      <div className="pokemon-search">
+        <input
+          type="text"
+          placeholder="Search Pokémon"
+          className="search"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
       <ul className="cards">
         {
-            pokemon.map((curPokemon) => {
+            filterPokemon.map((curPokemon) => {
                 return  <PokemonCards key={curPokemon.id} pokemondata = {curPokemon} />
 
             })

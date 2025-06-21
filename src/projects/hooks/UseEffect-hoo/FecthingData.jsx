@@ -56,6 +56,17 @@ const FetchingPokemon = () => {
                 />
               </figure>
               <h1>{pokemon.name}</h1>
+               <div className="grid-three-cols">
+            <p className="pokemon-info">
+              Height: <span> {pokemon.height} </span>
+            </p>
+            <p className="pokemon-info">
+              Weight: <span> {pokemon.weight}</span>
+            </p>
+            <p className="pokemon-info">
+              speed: <span>{pokemon.stats[5].base_stat}</span>
+            </p>
+          </div>
             </li>
           )}
         </ul>
