@@ -1,14 +1,12 @@
 import React from 'react'
 import { useRef } from 'react'
 const Useref = () => {
-
  const username = useRef(null);
  const password = useRef(null);
 
 
 const handleonSubmit = (e) => {
     e.preventDefault();
-   
     console.log(username.current.value, password.current.value);
 }
   return (
