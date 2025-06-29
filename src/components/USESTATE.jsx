@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Usestate = () => {
   const [Count, setCount] = useState(0);
@@ -57,7 +57,7 @@ const Usestate = () => {
           onClick={() => setShowModal(false)}
         >
           <div className="bg-white rounded-lg shadow-xl p-16 text-2xl font-bold text-center">
-            YOU ARE A TITOMON 
+            YOU ARE A TITOMON
           </div>
         </div>
       )}
@@ -66,5 +66,3 @@ const Usestate = () => {
 };
 
 export default Usestate;
-
-

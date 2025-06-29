@@ -6,14 +6,14 @@ const RegistrationForm = () => {
     lastName: '',
     email: '',
     password: '',
-    confirmPassword: ''
+    confirmPassword: '',
   });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setUserData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -32,7 +32,9 @@ const RegistrationForm = () => {
         <hr className="mt-3" />
         <form onSubmit={handleSubmitData}>
           <div className="mt-3">
-            <label htmlFor="firstName" className="block text-base mb-2">First Name</label>
+            <label htmlFor="firstName" className="block text-base mb-2">
+              First Name
+            </label>
             <input
               type="text"
               name="firstName"
@@ -43,7 +45,9 @@ const RegistrationForm = () => {
             />
           </div>
           <div className="mt-3">
-            <label htmlFor="lastName" className="block text-base mb-2">Last Name</label>
+            <label htmlFor="lastName" className="block text-base mb-2">
+              Last Name
+            </label>
             <input
               type="text"
               name="lastName"
@@ -54,7 +58,9 @@ const RegistrationForm = () => {
             />
           </div>
           <div className="mt-3">
-            <label htmlFor="email" className="block text-base mb-2">Email</label>
+            <label htmlFor="email" className="block text-base mb-2">
+              Email
+            </label>
             <input
               type="email"
               name="email"
@@ -65,7 +71,9 @@ const RegistrationForm = () => {
             />
           </div>
           <div className="mt-3">
-            <label htmlFor="password" className="block text-base mb-2">Create Password</label>
+            <label htmlFor="password" className="block text-base mb-2">
+              Create Password
+            </label>
             <input
               type="password"
               name="password"
@@ -76,7 +84,9 @@ const RegistrationForm = () => {
             />
           </div>
           <div className="mt-3">
-            <label htmlFor="confirmPassword" className="block text-base mb-2">Confirm Password</label>
+            <label htmlFor="confirmPassword" className="block text-base mb-2">
+              Confirm Password
+            </label>
             <input
               type="password"
               name="confirmPassword"
@@ -89,7 +99,8 @@ const RegistrationForm = () => {
           <div className="mt-5">
             <button
               type="submit"
-              className="w-full border-2 border-indigo-700 bg-indigo-800 text-white text-base py-2 rounded-md text-center">
+              className="w-full border-2 border-indigo-700 bg-indigo-800 text-white text-base py-2 rounded-md text-center"
+            >
               Sign-Up
             </button>
           </div>

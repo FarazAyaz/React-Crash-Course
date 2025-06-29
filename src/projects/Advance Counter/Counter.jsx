@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -6,14 +6,14 @@ const Counter = () => {
 
   const handleCountInc = () => {
     if (count >= 100) {
-      alert("You have reached the maximum limit of 100");
+      alert('You have reached the maximum limit of 100');
       return;
     }
     setCount(count + step);
   };
   const handleCountDec = () => {
     if (count <= 0) {
-      alert("You have reached the minimum limit of 0");
+      alert('You have reached the minimum limit of 0');
       return;
     }
     setCount(count - step);

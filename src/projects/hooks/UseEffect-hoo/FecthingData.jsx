@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import "./Pokemon.css";
+import React, { useState, useEffect } from 'react';
+import './Pokemon.css';
 
 const FetchingPokemon = () => {
   const [pokemon, setPokemon] = useState(null);
@@ -9,7 +9,7 @@ const FetchingPokemon = () => {
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
-        const api = await fetch("https://pokeapi.co/api/v2/pokemon/charizard");
+        const api = await fetch('https://pokeapi.co/api/v2/pokemon/charizard');
         const data = await api.json();
         setPokemon(data);
         setLoading(false);
@@ -56,17 +56,17 @@ const FetchingPokemon = () => {
                 />
               </figure>
               <h1>{pokemon.name}</h1>
-               <div className="grid-three-cols">
-            <p className="pokemon-info">
-              Height: <span> {pokemon.height} </span>
-            </p>
-            <p className="pokemon-info">
-              Weight: <span> {pokemon.weight}</span>
-            </p>
-            <p className="pokemon-info">
-              speed: <span>{pokemon.stats[5].base_stat}</span>
-            </p>
-          </div>
+              <div className="grid-three-cols">
+                <p className="pokemon-info">
+                  Height: <span> {pokemon.height} </span>
+                </p>
+                <p className="pokemon-info">
+                  Weight: <span> {pokemon.weight}</span>
+                </p>
+                <p className="pokemon-info">
+                  speed: <span>{pokemon.stats[5].base_stat}</span>
+                </p>
+              </div>
             </li>
           )}
         </ul>

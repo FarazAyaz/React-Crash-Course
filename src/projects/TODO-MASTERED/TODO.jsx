@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import { BiCheckCircle } from "react-icons/bi";
-import { MdDeleteOutline } from "react-icons/md";
+import React, { useState } from 'react';
+import { BiCheckCircle } from 'react-icons/bi';
+import { MdDeleteOutline } from 'react-icons/md';
 
 const TODO = () => {
   const [todos, setTodos] = useState([]);
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
 
   const addTodo = () => {
-    if (!inputValue) return alert("Please enter a todo");
+    if (!inputValue) return alert('Please enter a todo');
     const todo = {
       id: todos.length + 1,
       content: inputValue,
-      state: "pending",
+      state: 'pending',
     };
     setTodos((prev) => [...prev, todo]);
-    setInputValue("");
+    setInputValue('');
   };
 
   const handleDeleteTodo = (id) => {
@@ -28,12 +28,10 @@ const TODO = () => {
         if (todo.id === id) {
           return {
             ...todo,
-            state: todo?.state === "pending" ? "completed" : "pending",
+            state: todo?.state === 'pending' ? 'completed' : 'pending',
           };
         } else return todo;
       });
-
-      
     });
   };
 
@@ -65,14 +63,12 @@ const TODO = () => {
         <>
           <ul className="space-y-4  w-full max-sm:max-w-[80%]  max-w-[60%] mt-8">
             {todos.map((todo) => {
-              console.log("This is todo", todo);
+              console.log('This is todo', todo);
               return (
                 <li
                   key={todo.id}
                   className={`bg-white ${
-                    todo?.state === "completed"
-                      ? "border-2 border-green-600 shadow-green-300"
-                      : ""
+                    todo?.state === 'completed' ? 'border-2 border-green-600 shadow-green-300' : ''
                   } p-4 flex items-center justify-between flex-1 rounded-lg shadow-md`}
                 >
                   <h1 className="">{todo.content}</h1>

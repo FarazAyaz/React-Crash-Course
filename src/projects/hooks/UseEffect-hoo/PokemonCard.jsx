@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import PokemonCards from "./PokemonCards";
-import "./Pokemon.css";
+import React, { useEffect, useState } from 'react';
+import PokemonCards from './PokemonCards';
+import './Pokemon.css';
 
 const PokemonCard = () => {
-    const [pokemon, setPokemon] = useState([]);
-    const [search, setSearch] = useState("");
+  const [pokemon, setPokemon] = useState([]);
+  const [search, setSearch] = useState('');
   useEffect(() => {
-    const API = "https://pokeapi.co/api/v2/pokemon?limit=100";
+    const API = 'https://pokeapi.co/api/v2/pokemon?limit=100';
     const fetchPokemon = async () => {
       try {
         let res = await fetch(API);
@@ -21,15 +21,17 @@ const PokemonCard = () => {
         const DetailList = await Promise.all(pokemonlist);
         console.log(DetailList);
         setPokemon(DetailList);
-
       } catch (error) {
         console.log(error);
       }
     };
     fetchPokemon();
   }, []);
-   const filterPokemon = pokemon.filter((curPokemon) => curPokemon.name.toLowerCase().includes(search.toLowerCase()))
-  return  <div>
+  const filterPokemon = pokemon.filter((curPokemon) =>
+    curPokemon.name.toLowerCase().includes(search.toLowerCase()),
+  );
+  return (
+    <div>
       <header>
         <h1> Lets Catch Pokémon</h1>
       </header>
@@ -43,17 +45,12 @@ const PokemonCard = () => {
         />
       </div>
       <ul className="cards">
-        {
-            filterPokemon.map((curPokemon) => {
-                return  <PokemonCards key={curPokemon.id} pokemondata = {curPokemon} />
-
-            })
-           
-        }
-
+        {filterPokemon.map((curPokemon) => {
+          return <PokemonCards key={curPokemon.id} pokemondata={curPokemon} />;
+        })}
       </ul>
-
-  </div>;
+    </div>
+  );
 };
 
 export default PokemonCard;

@@ -1,34 +1,32 @@
-import React from 'react'
+import React from 'react';
 
 const EventProps = () => {
-    const HandleWelcomeUser = (user) =>{
-        alert(`My Name is ${user}`)
-    };
-const handleHover = () => {
-    alert("Thanks Faraz For Hovering Me")
-};
+  const HandleWelcomeUser = (user) => {
+    alert(`My Name is ${user}`);
+  };
+  const handleHover = () => {
+    alert('Thanks Faraz For Hovering Me');
+  };
   return (
     <>
-      <WelcomeUser onClick = {()=>HandleWelcomeUser("Faraz")}
-        onMouseEnter = {handleHover}
-        />
+      <WelcomeUser onClick={() => HandleWelcomeUser('Faraz')} onMouseEnter={handleHover} />
     </>
-  )
-}
-const WelcomeUser = ({onClick,onMouseEnter}) => {
-    // const {onClick, onMouseEnter} = data;
-    const HandleGreeting = ()=> {
-        console.log("HEllo Faraz");
-        }
-    return (
-        <>
-        <button onClick={onClick}>Click Me</button>
-        <button onMouseEnter={onMouseEnter}>Hover Me</button>
-        <button onClick={HandleGreeting}>Greeting</button>    
-        </>
-    )
-}
-export default EventProps
+  );
+};
+const WelcomeUser = ({ onClick, onMouseEnter }) => {
+  // const {onClick, onMouseEnter} = data;
+  const HandleGreeting = () => {
+    console.log('HEllo Faraz');
+  };
+  return (
+    <>
+      <button onClick={onClick}>Click Me</button>
+      <button onMouseEnter={onMouseEnter}>Hover Me</button>
+      <button onClick={HandleGreeting}>Greeting</button>
+    </>
+  );
+};
+export default EventProps;
 // import React from 'react';
 
 // const WelcomeUser = (props) => {

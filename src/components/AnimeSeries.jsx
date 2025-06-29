@@ -1,5 +1,5 @@
-import SeriesData from "../api/seriesData.json";
-import SeriesCard from "./SeriesCard";
+import SeriesData from '../api/seriesData.json';
+import SeriesCard from './SeriesCard';
 const AnimeSeries = () => {
   return (
     <ul>

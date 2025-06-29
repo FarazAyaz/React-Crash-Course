@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Props = ({ heading, name, age, functions, functionss }) => {
   return (

@@ -12,12 +12,13 @@ import TODO from "./projects/TODO-MASTERED/TODO";
 import Todo from "./projects/Todo/Todo";
 import MyTodo from "./projects/MyTodo/MyTodo";
 import Counter from "./projects/Advance Counter/Counter";
-import RegistartionForm from "./hooks/RegistartionForm";
-import LoginForm from "./hooks/LoginForm";
+import LoginForm from "./projects/hooks/UseEffect-hoo/";
+import RegistrationForm from "./projects/hooks/UseEffect-hoo/RegistrationForm";
 import Useeffect from "./projects/hooks/UseEffect-hoo/Useeffect";
 import FecthingData from "./projects/hooks/UseEffect-hoo/FecthingData";
 import PokemonCard from "./projects/hooks/UseEffect-hoo/PokemonCard";
 import Useref from "./projects/hooks/Useref hook/Useref";
+
 const App = () => {
   return (
     <div >
@@ -35,12 +36,12 @@ const App = () => {
       {/* <TODO /> */}
       {/* <MyTodo /> */}
       {/* <Counter /> */}
-       {/* <RegistartionForm /> */}
+       {/* <RegistrationForm /> */}
        {/* <LoginForm /> */}
        {/* <Useeffect /> */}
        {/* <FecthingData /> */}
-      {/* <PokemonCard /> */}
-      <Useref />
+      <PokemonCard />
+      {/* <Useref /> */}
     </div>
   );
 };

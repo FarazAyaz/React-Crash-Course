@@ -3,13 +3,13 @@ import Usestate from './Usestate';
 
 const Practicehook = () => {
   const [users, setUsers] = useState([
-    { name: "Faraz Ayaz", age: 20 },
-    { name: "Adnan Ayaz", age: 23 },
-    { name: "Siffat Ayaz", age: 25 },
-    { name: "Ayaz", age: 28 }
+    { name: 'Faraz Ayaz', age: 20 },
+    { name: 'Adnan Ayaz', age: 23 },
+    { name: 'Siffat Ayaz', age: 25 },
+    { name: 'Ayaz', age: 28 },
   ]);
-   const userCount = users.length;
-   const avg = users.reduce((acc, user)=> acc + user.age, 0) / userCount;
+  const userCount = users.length;
+  const avg = users.reduce((acc, user) => acc + user.age, 0) / userCount;
   return (
     <>
       <h1>Users List</h1>
@@ -28,4 +28,3 @@ const Practicehook = () => {
 };
 
 export default Practicehook;
-
