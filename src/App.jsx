@@ -12,7 +12,7 @@ import TODO from "./projects/TODO-MASTERED/TODO";
 import Todo from "./projects/Todo/Todo";
 import MyTodo from "./projects/MyTodo/MyTodo";
 import Counter from "./projects/Advance Counter/Counter";
-import LoginForm from "./projects/hooks/UseEffect-hoo/";
+import LoginForm from "./projects/hooks/UseEffect-hoo/LoginForm";
 import RegistrationForm from "./projects/hooks/UseEffect-hoo/RegistrationForm";
 import Useeffect from "./projects/hooks/UseEffect-hoo/Useeffect";
 import FecthingData from "./projects/hooks/UseEffect-hoo/FecthingData";
@@ -22,7 +22,7 @@ import Useref from "./projects/hooks/Useref hook/Useref";
 const App = () => {
   return (
     <div >
-      {/* <h1>Netflix Top Best Series</h1> */}
+      <h1>Netflix Top Best Series</h1>
       {/* <AnimeSeries/> */}
       {/* <Profile/> */}
       {/* <EventHandling/> */}
@@ -40,7 +40,7 @@ const App = () => {
        {/* <LoginForm /> */}
        {/* <Useeffect /> */}
        {/* <FecthingData /> */}
-      <PokemonCard />
+      {/* <PokemonCard /> */}
       {/* <Useref /> */}
     </div>
   );
