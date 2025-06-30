@@ -18,11 +18,13 @@ import Useeffect from "./projects/hooks/UseEffect-hoo/Useeffect";
 import FecthingData from "./projects/hooks/UseEffect-hoo/FecthingData";
 import PokemonCard from "./projects/hooks/UseEffect-hoo/PokemonCard";
 import Useref from "./projects/hooks/Useref hook/Useref";
+import { BioContext, BioProvider } from "./projects/hooks/CONTEXTAPI";
+import { Home } from "./projects/hooks/CONTEXTAPI/Home";
 
 const App = () => {
   return (
     <div >
-      <h1>Netflix Top Best Series</h1>
+      {/* <h1>Netflix Top Best Series</h1> */}
       {/* <AnimeSeries/> */}
       {/* <Profile/> */}
       {/* <EventHandling/> */}
@@ -42,6 +44,9 @@ const App = () => {
        {/* <FecthingData /> */}
       {/* <PokemonCard /> */}
       {/* <Useref /> */}
+      <BioProvider>
+        <Home />
+      </BioProvider>
     </div>
   );
 };
