@@ -20,6 +20,8 @@ import PokemonCard from "./projects/hooks/UseEffect-hoo/PokemonCard";
 import Useref from "./projects/hooks/Useref hook/Useref";
 import { BioContext, BioProvider } from "./projects/hooks/CONTEXTAPI";
 import { Home } from "./projects/hooks/CONTEXTAPI/Home";
+import { ThemeProvider } from "./projects/hooks/CONTEXTAPI/DarkTheme";
+import { DarkLight } from "./projects/hooks/CONTEXTAPI/DarkTheme";
 
 const App = () => {
   return (
@@ -44,9 +46,12 @@ const App = () => {
        {/* <FecthingData /> */}
       {/* <PokemonCard /> */}
       {/* <Useref /> */}
-      <BioProvider>
+      {/* <BioProvider>
         <Home />
-      </BioProvider>
+      </BioProvider> */}
+      <ThemeProvider>
+        <DarkLight />
+      </ThemeProvider>
     </div>
   );
 };
