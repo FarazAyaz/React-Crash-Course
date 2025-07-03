@@ -22,6 +22,7 @@ import { BioContext, BioProvider } from "./projects/hooks/CONTEXTAPI";
 import { Home } from "./projects/hooks/CONTEXTAPI/Home";
 import { ThemeProvider } from "./projects/hooks/CONTEXTAPI/DarkTheme";
 import { DarkLight } from "./projects/hooks/CONTEXTAPI/DarkTheme";
+import UseReducer from "./projects/hooks/UseReducer hook/UseReducer";
 
 const App = () => {
   return (
@@ -49,9 +50,10 @@ const App = () => {
       {/* <BioProvider>
         <Home />
       </BioProvider> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <DarkLight />
-      </ThemeProvider>
+      </ThemeProvider> */}
+      <UseReducer />
     </div>
   );
 };
