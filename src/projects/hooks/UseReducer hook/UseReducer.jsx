@@ -14,7 +14,7 @@ const UseReducer = () => {
         return state - 1;
         case "Reset":
         return (0);
-        default:
+        default :
         return state;
       }
     };
