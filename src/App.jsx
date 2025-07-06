@@ -45,7 +45,7 @@ const App = () => {
        {/* <LoginForm /> */}
        {/* <Useeffect /> */}
        {/* <FecthingData /> */}
-      {/* <PokemonCard /> */}
+      <PokemonCard />
       {/* <Useref /> */}
       {/* <BioProvider>
         <Home />
@@ -53,7 +53,7 @@ const App = () => {
       {/* <ThemeProvider>
         <DarkLight />
       </ThemeProvider> */}
-      <UseReducer />
+      {/* <UseReducer /> */}
     </div>
   );
 };
